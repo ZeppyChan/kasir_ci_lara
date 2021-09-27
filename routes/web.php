@@ -14,7 +14,7 @@ use App\Http\Controllers\KasirController;
 |
 */
 
-Route::get('/', [KasirController::class, 'index']);
+Route::get('/', [KasirController::class, 'index'])->name('kasir');
 Route::get('/test', [KasirController::class, 'test']);
 
 Route::get('/get_products', [KasirController::class, 'get'])->name('get_products');
